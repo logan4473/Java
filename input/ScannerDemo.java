@@ -10,5 +10,7 @@ public class ScannerDemo {
         String c = sc.nextLine();
 
         System.out.println("Output : a = "+a+" b = "+b+" c = "+c);
+
+        if(sc!=null) sc.close();
     }    
 }
