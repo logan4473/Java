@@ -34,6 +34,20 @@ class Circle extends Shapes {
     }
 }
 
+class Poly{
+    public int mul(int a,int b){
+        return a*b;
+    }
+
+    public double mul(double a,double b){
+        return a*b;
+    }
+
+    public int mul(int a,int b,int c){
+        return a*b*c;
+    }
+}
+
 public class Test{
     public static void main(String[] args) {
         Circle c = new Circle(5);
@@ -42,5 +56,10 @@ public class Test{
         System.out.println(c.getDimentions());
         System.out.println(c.getRadius());
         System.out.println(c.area());
+
+        Poly p = new Poly();
+        System.out.println(p.mul(3, 3));
+        System.out.println(p.mul(3, 3,2));
+        System.out.println(p.mul(5, 3.5));
     }
 }
