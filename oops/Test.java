@@ -48,6 +48,20 @@ class Poly{
     }
 }
 
+class PolyChild{
+    public int mul(int a,int b){
+        System.out.println("Using PolyChild");
+        return a*b;
+    }
+}
+
+class PolyGrandChild{
+    public int mul(int a,int b,int c){
+        System.out.println("Using PolyGrandChild");
+        return a*b*c;
+    }
+}
+
 public class Test{
     public static void main(String[] args) {
         Circle c = new Circle(5);
@@ -61,5 +75,11 @@ public class Test{
         System.out.println(p.mul(3, 3));
         System.out.println(p.mul(3, 3,2));
         System.out.println(p.mul(5, 3.5));
+
+        PolyChild pc = new PolyChild();
+        System.out.println(pc.mul(10, 12));
+
+        PolyGrandChild pgc = new PolyGrandChild();
+        System.out.println(pgc.mul(10, 12, 5));
     }
 }
