@@ -62,7 +62,18 @@ class PolyGrandChild{
     }
 }
 
-public class Test{
+interface In1{
+    final int x = 10;
+
+    void display();
+}
+
+public class Test implements In1{
+
+    public void display(){
+        System.out.println("Interfacing");
+    }
+
     public static void main(String[] args) {
         Circle c = new Circle(5);
 
@@ -81,5 +92,9 @@ public class Test{
 
         PolyGrandChild pgc = new PolyGrandChild();
         System.out.println(pgc.mul(10, 12, 5));
+
+        Test t = new Test();
+        t.display();
+        System.out.println(t.x);
     }
 }
