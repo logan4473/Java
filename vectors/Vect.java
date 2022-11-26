@@ -8,5 +8,13 @@ public class Vect {
         }
 
         System.out.println(v);
+
+        for(int i=0;i<v.size();i++){
+            System.out.println("v["+i+"] = "+v.get(i));
+        }
+
+        for (int i : v) {
+            System.out.println(i);
+        }
     }
 }
