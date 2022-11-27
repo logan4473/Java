@@ -20,5 +20,13 @@ public class Vect {
         v.add(5, 45);
         System.out.println(v);
 
+        Vector<Integer> b = v;
+        v.add(78);
+        System.out.println(b);
+
+        Object c = v.clone();
+        v.add(25);
+        System.out.println("c : " + c + " v : " + v);
+
     }
 }
