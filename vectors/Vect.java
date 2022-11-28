@@ -28,5 +28,10 @@ public class Vect {
         v.add(25);
         System.out.println("c : " + c + " v : " + v);
 
+        System.out.println(v.contains(10));
+
+        Integer x = 10;
+        System.out.println(v.contains(x));
+
     }
 }
