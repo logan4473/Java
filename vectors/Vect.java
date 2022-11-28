@@ -33,5 +33,12 @@ public class Vect {
         Integer x = 10;
         System.out.println(v.contains(x));
 
+        Vector<Integer> y = new Vector<Integer>();
+        y.add(1);
+        y.add(2);
+        y.add(3);
+
+        System.out.println(v.containsAll(y));
+
     }
 }
