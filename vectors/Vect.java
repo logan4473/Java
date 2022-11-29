@@ -40,5 +40,7 @@ public class Vect {
 
         System.out.println(v.containsAll(y));
 
+        v.forEach((element) -> System.out.println(element));
+
     }
 }
