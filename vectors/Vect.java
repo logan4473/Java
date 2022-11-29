@@ -1,5 +1,7 @@
 import java.util.Vector;
 
+import javax.sound.midi.SysexMessage;
+
 public class Vect {
     public static void main(String[] args) {
         Vector<Integer> v = new Vector<Integer>(10);
@@ -40,7 +42,11 @@ public class Vect {
 
         System.out.println(v.containsAll(y));
 
-        v.forEach((element) -> System.out.println(element));
+        v.forEach((element) -> System.out.print(element + " "));
+
+        System.out.println();
+        System.out.println(v.capacity());
+        System.out.println(v.size());
 
     }
 }
