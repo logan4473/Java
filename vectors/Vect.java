@@ -1,3 +1,4 @@
+import java.util.Enumeration;
 import java.util.Vector;
 
 import javax.sound.midi.SysexMessage;
@@ -47,6 +48,14 @@ public class Vect {
         System.out.println();
         System.out.println(v.capacity());
         System.out.println(v.size());
+
+        Enumeration enu = v.elements();
+
+        while (enu.hasMoreElements()) {
+            System.out.print(enu.nextElement() + " ");
+        }
+
+        System.out.println();
 
     }
 }
