@@ -17,5 +17,7 @@ public class ArrList {
         }
         System.out.println();
 
+        arrli.forEach(x -> System.out.println(x));
+
     }
 }
