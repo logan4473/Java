@@ -17,7 +17,13 @@ public class ArrList {
         }
         System.out.println();
 
-        arrli.forEach(x -> System.out.println(x));
+        arrli.forEach(x -> System.out.print(x + " "));
+        System.out.println();
+
+        arrli.add(2, 5);
+
+        System.out.println(arrli.indexOf(5));
+        System.out.println(arrli.lastIndexOf(5));
 
     }
 }
