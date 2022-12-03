@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class ArrList {
     public static void main(String[] args) {
@@ -24,6 +25,18 @@ public class ArrList {
 
         System.out.println(arrli.indexOf(5));
         System.out.println(arrli.lastIndexOf(5));
+
+        ListIterator<Integer> it = arrli.listIterator();
+
+        while (it.hasNext())
+            System.out.print(it.next() + " ");
+        System.out.println();
+
+        it = arrli.listIterator(2);
+
+        while (it.hasNext())
+            System.out.print(it.next() + " ");
+        System.out.println();
 
     }
 }
