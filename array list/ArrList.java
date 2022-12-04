@@ -38,5 +38,7 @@ public class ArrList {
             System.out.print(it.next() + " ");
         System.out.println();
 
+        System.out.println(arrli.subList(1, 4));
+
     }
 }
