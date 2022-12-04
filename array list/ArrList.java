@@ -40,5 +40,11 @@ public class ArrList {
 
         System.out.println(arrli.subList(1, 4));
 
+        Object[] obj = arrli.toArray();
+        for (Object i : obj) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
     }
 }
