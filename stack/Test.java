@@ -9,5 +9,11 @@ public class Test {
 
         System.out.println(stack);
         System.out.println("Top of stack : " + stack.peek());
+
+        while (!stack.empty()) {
+            System.out.println(stack.peek());
+            stack.pop();
+        }
+
     }
 }
