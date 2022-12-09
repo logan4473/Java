@@ -9,5 +9,13 @@ public class ll {
         }
 
         System.out.println(l);
+
+        l.addFirst(6);
+        l.addLast(9);
+
+        System.out.println(l);
+        System.out.println("First element : " + l.getFirst());
+        System.out.println("Last element : " + l.getLast());
+
     }
 }
