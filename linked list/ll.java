@@ -19,5 +19,14 @@ public class ll {
 
         l.set(6, 12);
         System.out.println(l);
+
+        Object[] arr = l.toArray();
+        for (Object i : arr)
+            System.out.print(i + " ");
+        System.out.println();
+
+        String s = l.toString();
+        System.out.println(s);
+
     }
 }
