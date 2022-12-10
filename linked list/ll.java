@@ -17,5 +17,7 @@ public class ll {
         System.out.println("First element : " + l.getFirst());
         System.out.println("Last element : " + l.getLast());
 
+        l.set(6, 12);
+        System.out.println(l);
     }
 }
