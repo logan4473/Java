@@ -11,5 +11,12 @@ public class abstqueue {
 
         System.out.println(absq);
 
+        System.out.println(absq.element());
+
+        int head = absq.remove();
+
+        System.out.println("Removed " + head);
+        System.out.println(absq);
+
     }
 }
