@@ -9,5 +9,19 @@ public class deq {
         }
 
         System.out.println(dq);
+
+        dq.addFirst(6);
+        dq.addLast(7);
+        dq.push(8);
+        dq.offer(9);
+        dq.offerFirst(10);
+
+        System.out.println(dq);
+
+        dq.removeFirst();
+        dq.removeLast();
+
+        System.out.println(dq);
+
     }
 }
