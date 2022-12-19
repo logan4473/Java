@@ -9,5 +9,12 @@ public class hashmap {
         m.put("levis", 102);
 
         System.out.println(m);
+
+        System.out.println(m.size());
+
+        System.out.println(m.get("logan"));
+
+        System.out.println(m.containsKey("superman"));
+
     }
 }
