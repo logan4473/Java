@@ -16,5 +16,9 @@ public class hashmap {
 
         System.out.println(m.containsKey("superman"));
 
+        for (Map.Entry<String, Integer> i : m.entrySet()) {
+            System.out.println("key = " + i.getKey() + " value = " + i.getValue());
+        }
+
     }
 }
